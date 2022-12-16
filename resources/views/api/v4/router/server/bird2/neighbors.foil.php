@@ -130,7 +130,8 @@ int set allas;
             accept;
         }
     }
-
+    # Filter Never Via Route Server
+    if filter_has_never_asn() then accept;
 
     # Filter Known Transit Networks
     if filter_has_transit_path() then accept;
