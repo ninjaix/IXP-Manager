@@ -31,7 +31,7 @@ define IXP_LC_FILTERED_RPKI_UNKNOWN             = ( routeserverasn, 1101, 12 );
 define IXP_LC_FILTERED_RPKI_INVALID             = ( routeserverasn, 1101, 13 );
 define IXP_LC_FILTERED_TRANSIT_FREE_ASN         = ( routeserverasn, 1101, 14 );
 define IXP_LC_FILTERED_TOO_MANY_COMMUNITIES     = ( routeserverasn, 1101, 15 );
-
+define IXP_LC_FILTERED_NEVER_VIA_ROUTE_SERVER   = ( routeserverasn, 1101, 16 );
 
 
 
