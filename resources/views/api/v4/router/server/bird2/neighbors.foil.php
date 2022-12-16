@@ -135,6 +135,9 @@ int set allas;
 
     # Filter Known Transit Networks
     if filter_has_transit_path() then accept;
+                        
+    # Filter Bogon ASNs
+    if filter_has_bogon_asn() then accept;                        
 
     # Belt and braces: no one needs an ASN path with > 64 hops, that's just broken
     if( bgp_path.len > 64 ) then {
